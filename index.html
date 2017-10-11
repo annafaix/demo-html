@@ -11,7 +11,6 @@ body{
   font-family: Poiret One;
 }
 div{
-  width: 50%;
   text-align: center;
 }
 h1{
@@ -19,50 +18,76 @@ h1{
 }
 h2{
   font-size: 30pt;
-  font-style:strong;
+}
+h2:hover{
+  color: orange;
 }
 p{
-
   font-size:17pt;
 }
-#footer {
-		position:relative;
-		bottom: 0;
-		width: 100%;
-		height: 40pt;
-		background-color: rgb(255, 183, 0);
+#test{
+  text-align: center;
+  display: none;
+}
+#testTva{
+  text-align: center;
+  display: none;
+}
+#testTre{
+  text-align: center;
+  display: none;
+}
+footer {
+  position:relative;
+	bottom: 0;
+	width: 100%;
+	height: 40pt;
+	background-color: rgb(255, 183, 0);
 	}
 img{
+    text-align: center;
     width: 50px;
     height: 50px;
   }
   </style>
 </head>
 <body>
-<center>
-</br>
-  <h1>Anna Faixová</h1></br>
-    <h2>Om mig</h2>
-      <div><p>Ahoj!<br/><em>=="Hej!"==</em><br/><br/> Mitt namn är Anna Faixová och är 28 år. Jag kommer från ett land som inte har något hav men ändå hälsningsfraser som pirater - Slovakien.<br/>
-        Språk är något jag brinner för. Efter studier av tyska och svenska på universitetet i Tjeckien, är det <strong> programeringsspråk </strong> som jag vill bemästra. Från 2014 är jag officielt en /:Gôte-bårgare:/.</p></div>
-
-    <h2>Utbildning</h2>
-      <div><p>EC Utbildning, Göteborg<br/>Frontend Utvecklare<br/><br/>Utbildningen ger goda färdigheter i att utveckla
+<br>
+  <h1>Anna Faixová</h1><br/>
+    <h2 onclick="myFunctionWorks()">Om mig</h2> <!-- först-->
+      <div id="test"><p><em>=="Ahoj!"==</em><br/><em>=="Hej!"==</em><br/><br/> Mitt namn är Anna Faixová och är 28 år. Jag kommer från ett land som inte har något hav men ändå hälsningsfraser som pirater - Slovakien.
+        Språk är något jag brinner för. Efter studier av tyska och svenska på universitetet i Tjeckien är det <strong> programeringsspråk </strong> och programmering som jag vill bemästra.
+        Från och med 2014 är jag officielt en Gôteborgare. Höstterminen 2017 började jag läsa till frontend-utvecklare på EC Utbildning.</p></div>
+    <h2 onclick="myFunctionTva()">Utbildning</h2>
+      <div id="testTva"><p><strong>EC Utbildning, Göteborg</strong><br/>Frontend-utvecklare<br/><br/>Utbildningen ger goda färdigheter i att utveckla
         effektiva och responsiva webbsidor med HTML, CSS och JavaScript. Utbildningen har också ett starkt fokus på strukturerad programutveckling. En fjärdedel av utbildningens två år genomförs
-        ute på företag vilket kombineras med teoretiska och projektbaserade studier på skolan som samtidigt ger ett nätverk att
-        ta avstamp ifrån efter avslutad utbildning. </p></div><br/>
-    <h2>Projekt</h2><br/>
+        ute på företag vilket kombineras med teoretiska och projektbaserade studier på skolan. För mer information, se <a href="http://www.ecutbildning.se/utbildningar/frontend-utvecklare">här</a></p></div>
+    <h2 onclick="myFunctionTre()">Projekt</h2>
+      <div id="testTre"><img style="width:375px;height:500px;"src="messi JS.jpg" title="work in progress" alt="projec(a)ts"/></div>
     <h2>Övningar</h2>
-    <p><a href="html-exercises.html">(...ger färdighet)</p>
+    <p><a href="html-exercises.html">(...ger färdighet)</a></p>
 <br/>
-</center>
+<footer>
+  <a href="https://www.linkedin.com/in/anna-faixov%C3%A1-62b77a138/" target="_blank">
+    <img src="https://seeklogo.com/images/L/linkedin-icon-logo-05B2880899-seeklogo.com.png" alt="linkedin image"/>
+  </a>
+  <a href= "https://github.com/annafaix" target="_blank">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github image"/>
+  </a>
+</footer>
+<script>
+function myFunctionWorks() {
+    var x = document.getElementById("test");
+    (x.style.display === "none") ? x.style.display = "block": x.style.display = "none";
+}
+function myFunctionTva() {
+    var x = document.getElementById("testTva");
+    (x.style.display === "none") ? x.style.display = "block": x.style.display = "none";
+}
+function myFunctionTre() {
+    var x = document.getElementById("testTre");
+    (x.style.display === "none") ? x.style.display = "block": x.style.display = "none";
+  }
+</script>
 </body>
-<div id="footer">
-  <a href="https://www.linkedin.com/in/anna-faixov%C3%A1-62b77a138/"; target="_blank">
-    <img src="https://seeklogo.com/images/L/linkedin-icon-logo-05B2880899-seeklogo.com.png"alt="sorry">
-  </a>
-  <a href= "https://github.com/annafaix"; target="_blank">
-    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png">
-  </a>
-  </div
 </html>
