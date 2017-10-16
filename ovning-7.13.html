@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Övning 7.13</title>
+    <style media="screen">
+    body{
+      font-family: Arial;
+      font-size: 20px;
+      flat:left;
+    }
+    .out{
+      list-style-type: none;
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      background-color: lightBlue;
+      float:left;
+      position: fixed;
+    }
+    .out li{
+      display: inline;
+
+    }
+    .in{
+      list-style-type: none;
+      display: none;
+    }
+    .in li{
+      display: block;
+    }
+    li:hover:nth-child(2) .in{
+      color: white;
+      background-color: royalBlue;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: block;
+
+    }
+    </style>
+  </head>
+  <body>
+    <ul class="out">
+      <li>Arkiv</li>
+      <li>Redigera
+        <ul class="in">
+          <li>Ångra</li>
+          <li>Gör om</li>
+          <li>Klipp ut</li>
+          <li>Kopiera</li>
+          <li>Klistra in</li>
+        </ul></li>
+      <li>Visa</li>
+      <li>Infoga</li>
+    </ul>
+  </body>
+</html>
